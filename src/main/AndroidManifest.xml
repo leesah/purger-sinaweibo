@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="name.leesah.purger.sinaweibo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".purger.StatusPurger"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".purger.FriendshipPurger"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".purger.CommentPurger"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <meta-data
+            android:name="WEIBO_APPKEY"
+            android:value="397133677" />
+        <meta-data
+            android:name="WEIBO_CHANNEL"
+            android:value="weibo" />
+
+        <activity
+            android:name=".MonitorActivity"
+            android:label="@string/title_activity_monitor"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

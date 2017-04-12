@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Purger</string>
+    <string name="dialog_title_step_3">你确定吗？</string>
+    <string name="dialog_message_step_3">数据一经删除即无法恢复。</string>
+    <string name="dialog_title_step_5">删除已经开始。</string>
+    <string name="dialog_message_step_5">现在程序将进入后台执行。在删除完成之后你会收到通知。</string>
+    <string name="dialog_title_step_1">删除微博数据？</string>
+    <string name="dialog_message_step_1">你的（几乎）所有数据将被清除，包括你曾经发布的所有微博，你发表的所有评论，以及你的关注列表。你确定要继续吗？</string>
+    <string name="title_activity_monitor">Monitor</string>
+</resources>

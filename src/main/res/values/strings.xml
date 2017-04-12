@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Purger</string>
+
+    <string name="dialog_title_step_1">Erase Weibo account?</string>
+    <string name="dialog_message_step_1">This will delete data in your Weibo account, including statuses you posted, comments made by you, users in your following list. Do you want to continue?</string>
+    <string name="dialog_title_step_3">Are you sure?</string>
+    <string name="dialog_message_step_3">Recovering deleted data is impossible.</string>
+    <string name="dialog_title_step_5">Purge has been scheduled.</string>
+    <string name="dialog_message_step_5">Now the purge will continue in the background. You\'ll be noticed when it\'s done.</string>
+    <string name="title_activity_monitor">Monitor</string>
+
+</resources>
